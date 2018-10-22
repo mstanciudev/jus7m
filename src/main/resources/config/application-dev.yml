@@ -1,0 +1,13 @@
+#Spring boot dev profile
+spring:
+  application:
+    name: Realsecure
+  datasource:
+    url: jdbc:postgresql://localhost:5432/realsecurecore
+    username: postgres
+    password: root
+  liquibase:
+    change-log: classpath:/db/changelog/liquibase.master.xml
+server:
+  port: 8888
+  
